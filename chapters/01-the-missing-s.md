@@ -144,6 +144,17 @@ Ninety-nine percent reduction. Because of an 's'.
 
 ---
 
+### The Evidence
+
+| Duration | Concurrency | Invocations |
+|:--------:|:-----------:|:-----------:|
+| ![Duration](images/duration.png) | ![Concurrency](images/concurrency.png) | ![Invocations](images/invocations.png) |
+| *Average dropped from 10.7s to ~0ms* | *Max concurrent dropped from 9 to ~1* | *Invocations dropped from 45/min to near 0* |
+
+The graphs tell the story. Around 13:45 UTC, the fix deployed. Before: a wall of activity. After: silence. The system finally doing what it was supposed to do—nothing, until needed.
+
+---
+
 ### The Lesson
 
 There's a story engineers love to tell about a consultant who charges $10,000 to fix a machine. He walks in, looks around, and draws an X on a pipe with a marker. "Replace this part," he says. The manager is furious. "Ten thousand dollars for drawing an X?" The consultant smiles. "Drawing the X was $1. Knowing where to draw it was $9,999."
